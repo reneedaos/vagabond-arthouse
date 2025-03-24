@@ -10,7 +10,7 @@ function HomePage() {
       <Nav />
       <header className="header">
         <h1 className="title">Vagabond Arthouse LLC</h1>
-        <p className="subtitle">Professional servies for the future of work</p>
+        <p className="subtitle">Professional services for the future of work</p>
       </header>
       <main className="main">
         <section className="section">
@@ -18,7 +18,7 @@ function HomePage() {
           <p className="section-text">Unique description that sounds cool</p>
         </section>
         <section className="section">
-          <h2 className="section-title">My skills</h2>
+          <h2 className="section-title">My Services</h2>
           <ul className="skills-list">
             <li className="skill">Data Science</li>
             <li className="skill">Product Management</li>

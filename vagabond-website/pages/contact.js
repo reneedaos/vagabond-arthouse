@@ -21,15 +21,11 @@ function ContactPage() {
           <ul className="contact-list">
             <li className="contact-item">
               <i className="fas fa-envelope"></i>
-              <a href="mailto:your-email@example.com">your-email@example.com</a>
-            </li>
-            <li className="contact-item">
-              <i className="fas fa-phone"></i>
-              <a href="tel:your-phone-number">your-phone-number</a>
+              <a href="mailto:renee@rarecompute.io">renee@rarecompute.io</a>
             </li>
             <li className="contact-item">
               <i className="fab fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/your-linkedin-profile/">your-linkedin-profile</a>
+              <a href="https://www.linkedin.com/in/research-wizard/">your-linkedin-profile</a>
             </li>
           </ul>
         </section>
