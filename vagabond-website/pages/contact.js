@@ -25,7 +25,7 @@ function ContactPage() {
             </li>
             <li className="contact-item">
               <i className="fab fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/research-wizard/">your-linkedin-profile</a>
+              <a href="https://www.linkedin.com/in/research-wizard/">Linkedin</a>
             </li>
           </ul>
         </section>

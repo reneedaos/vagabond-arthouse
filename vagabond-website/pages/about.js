@@ -10,19 +10,19 @@ function AboutPage() {
       <Nav />
       <header className="header">
         <h1 className="title">About Me</h1>
-        <p className="subtitle">Get to know me better</p>
+        <p className="subtitle">Science isn't strange enough</p>
       </header>
       <main className="main">
         <section className="section">
           <h2 className="section-title">Who I am</h2>
           <p className="section-text">
-            I'm a developer and designer with a passion for building fast, scalable, and user-friendly websites. I've been working in the industry for several years and have a strong background in front-end development, back-end development, and design.
+          Renee Davis, a visionary Organizational Psychologist and Data Scientist, is a pioneering leader in the DeSci movement and founder of TalentDAO, the first project to develop a scientifically validated tool for measuring DAO Health. With 15+ years spanning Deloitte Consulting (where she incubated 13 human capital products) and Web3, she bridges academia, tech, and decentralized systems as a sought-after advisor and innovator. A globally recognized speaker, her work merges computational social science with blockchain to redefine collaboration, governance, and the future of work.
           </p>
         </section>
         <section className="section">
           <h2 className="section-title">What I do</h2>
           <p className="section-text">
-            I specialize in building custom websites, web applications, and mobile applications. I also provide services such as website maintenance, updates, and optimization.
+             I specialize in building decentralized organizations for scientific communities. Helping projects go from 0 to 1 since 2020.
           </p>
         </section>
         <section className="section">

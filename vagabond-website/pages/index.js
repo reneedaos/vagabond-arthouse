@@ -10,7 +10,7 @@ function HomePage() {
       <Nav />
       <header className="header">
         <h1 className="title">Vagabond Arthouse LLC</h1>
-        <p className="subtitle">Professional services for the future of work</p>
+        <p className="subtitle">The consultancy of Renee Davis</p>
       </header>
       <main className="main">
         <section className="section">
