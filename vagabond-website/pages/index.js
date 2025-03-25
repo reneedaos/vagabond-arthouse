@@ -15,7 +15,7 @@ function HomePage() {
       <main className="main">
         <section className="section">
           <h2 className="section-title">About me</h2>
-          <p className="section-text">Unique description that sounds cool</p>
+          <p className="section-text">The company you've never heard of launching all the projects you have</p>
         </section>
         <section className="section">
           <h2 className="section-title">My Services</h2>

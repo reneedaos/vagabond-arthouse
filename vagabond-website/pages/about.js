@@ -28,13 +28,13 @@ function AboutPage() {
         <section className="section">
           <h2 className="section-title">My skills</h2>
           <ul className="skills-list">
-            <li className="skill">HTML/CSS</li>
-            <li className="skill">JavaScript</li>
-            <li className="skill">React</li>
-            <li className="skill">Next.js</li>
-            <li className="skill">Node.js</li>
-            <li className="skill">Express.js</li>
-            <li className="skill">MongoDB</li>
+            <li className="skill">DAO Governance</li>
+            <li className="skill">Protocol Design</li>
+            <li className="skill">Tokenomics</li>
+            <li className="skill">Web3 Marketing</li>
+            <li className="skill">Prouct Management</li>
+            <li className="skill">Network Analysis</li>
+            <li className="skill">Web3 Technology</li>
           </ul>
         </section>
       </main>
