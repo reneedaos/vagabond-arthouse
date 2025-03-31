@@ -5,4 +5,7 @@ const nextConfig: NextConfig = {
   output: 'export'
 };
 
+module.exports = {
+  distDir: 'dist',
+};
 export default nextConfig;
