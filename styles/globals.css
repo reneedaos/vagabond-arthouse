@@ -230,10 +230,13 @@ body::before {
   cursor: pointer;
 }
 
-.skill::before {
-  content: attr(data-tooltip);
+.skill[data-tooltip] {
+  position: relative;
+}
+
+.tooltip {
   position: absolute;
-  bottom: 100%;
+  bottom: 120%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.95);
@@ -250,19 +253,28 @@ body::before {
     inset 0 0 10px rgba(0, 255, 255, 0.1);
   border: 1px solid rgba(0, 255, 255, 0.3);
   z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  margin-bottom: 10px;
   font-weight: 400;
   text-shadow: 0 0 3px #00ffff;
+  white-space: normal;
+  word-wrap: break-word;
+  animation: tooltipFadeIn 0.3s ease;
 }
 
-.skill::after {
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.tooltip::after {
   content: '';
   position: absolute;
-  bottom: 100%;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
@@ -270,20 +282,10 @@ body::before {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid rgba(0, 255, 255, 0.3);
-  z-index: 1001;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  margin-bottom: 2px;
 }
 
-.skill:hover::before,
-.skill:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
 
-.skill::before {
+.skill-shine::before {
   content: '';
   position: absolute;
   top: 0;
@@ -304,7 +306,7 @@ body::before {
   border-color: rgba(255, 0, 255, 0.6);
 }
 
-.skill:hover::before {
+.skill:hover .skill-shine::before {
   left: 100%;
 }
 
@@ -403,7 +405,7 @@ body::before {
     grid-template-columns: 1fr;
   }
   
-  .skill::before {
+  .tooltip {
     width: 280px;
     font-size: 13px;
     padding: 12px;
