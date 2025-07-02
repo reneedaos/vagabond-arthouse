@@ -224,9 +224,63 @@ body::before {
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
   text-shadow: 0 0 5px #00ffff;
+  cursor: pointer;
+}
+
+.skill::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.95);
+  color: #00ffff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 300px;
+  max-width: 90vw;
+  text-align: left;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.5),
+    inset 0 0 10px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-shadow: 0 0 3px #00ffff;
+}
+
+.skill::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(0, 255, 255, 0.3);
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 2px;
+}
+
+.skill:hover::before,
+.skill:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .skill::before {
@@ -347,5 +401,11 @@ body::before {
   
   .skills-list {
     grid-template-columns: 1fr;
+  }
+  
+  .skill::before {
+    width: 280px;
+    font-size: 13px;
+    padding: 12px;
   }
 }
