@@ -24,14 +24,14 @@ function ContactPage() {
           <section className="section">
             <h2 className="section-title">Communication Channels</h2>
             <p className="section-text">
-              Establish secure communication through the following encrypted channels:
+              Establish secure communication through the following channels
             </p>
             <div className="contact-grid">
               <div className="contact-item">
                 <div className="contact-icon">📧</div>
                 <div className="contact-info">
                   <div className="contact-label">NEURAL LINK</div>
-                  <a href="mailto:renee@rarecompute.io" className="contact-value">renee@rarecompute.io</a>
+                  <a href="mailto:renee.daoscience@gmail.com" className="contact-value">renee.daoscience@gmail.com</a>
                 </div>
               </div>
               <div className="contact-item">

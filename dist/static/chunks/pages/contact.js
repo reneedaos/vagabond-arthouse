@@ -1,0 +1,8 @@
+__turbopack_load_page_chunks__("/contact", [
+  "static/chunks/node_modules_next_07e3d480._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_963e26de._.js",
+  "static/chunks/[root of the server]__05f84e3f._.js",
+  "static/chunks/pages_contact_5771e187._.js",
+  "static/chunks/pages_contact_00e1edc0._.js"
+])

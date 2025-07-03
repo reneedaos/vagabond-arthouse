@@ -103,7 +103,7 @@ This project can be deployed on any platform that supports Next.js:
 ## 📞 Contact
 
 For questions about this project or Vagabond Arthouse services:
-- Email: renee@rarecompute.io
+- Email: renee.daoscience@gmail.com
 - LinkedIn: [@research-wizard](https://www.linkedin.com/in/research-wizard/)
 
 ---
