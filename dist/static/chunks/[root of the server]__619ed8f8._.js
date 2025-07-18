@@ -1273,7 +1273,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 function AboutPage() {
     _s();
-    const [hoveredSkill, setHoveredSkill] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [activeTooltip, setActiveTooltip] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const skills = [
         {
             name: "DAO Governance",
@@ -1465,72 +1465,34 @@ function AboutPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "skills-list",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        children: skills.map((skill, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 className: "skill",
-                                                title: "Design and implementation of governance frameworks that enable effective collective decision-making in decentralized organizations. Expertise in voting mechanisms, proposal systems, and conflict resolution protocols.",
-                                                children: "DAO Governance"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 85,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Architectural design of blockchain protocols with focus on scalability, security, and interoperability. Specializing in consensus mechanisms, smart contract architecture, and protocol economics.",
-                                                children: "Protocol Design"
-                                            }, void 0, false, {
+                                                onMouseEnter: ()=>setActiveTooltip(index),
+                                                onMouseLeave: ()=>setActiveTooltip(null),
+                                                children: [
+                                                    skill.name,
+                                                    activeTooltip === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "tooltip show",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "tooltip-content",
+                                                            children: skill.tooltip
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/pages/about.js",
+                                                            lineNumber: 95,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/about.js",
+                                                        lineNumber: 94,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, index, true, {
                                                 fileName: "[project]/pages/about.js",
                                                 lineNumber: 86,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Economic modeling and design of token systems including utility tokens, governance tokens, and incentive mechanisms. Expertise in token distribution, vesting schedules, and economic sustainability models.",
-                                                children: "Tokenomics"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 87,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Strategic marketing for Web3 projects including community building, narrative development, and growth hacking. Focus on technical audiences and scientific communities in the DeSci space.",
-                                                children: "Web3 Marketing"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 88,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "End-to-end product development from ideation to launch. Specializing in Web3 products, DeFi protocols, and scientific research tools. Expertise in user research, MVP development, and iterative design.",
-                                                children: "Product Management"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 89,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Mathematical analysis of complex networks including social networks, blockchain networks, and organizational structures. Expertise in graph theory, centrality measures, and network dynamics modeling.",
-                                                children: "Network Analysis"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 90,
-                                                columnNumber: 13
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Deep technical knowledge of blockchain technologies, smart contracts, DeFi protocols, and Web3 infrastructure. Hands-on experience with Ethereum, Layer 2 solutions, and emerging blockchain platforms.",
-                                                children: "Web3 Technology"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/about.js",
-                                                lineNumber: 91,
-                                                columnNumber: 13
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                                columnNumber: 15
+                                            }, this))
+                                    }, void 0, false, {
                                         fileName: "[project]/pages/about.js",
                                         lineNumber: 84,
                                         columnNumber: 11
@@ -1549,7 +1511,7 @@ function AboutPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$DataTerminal$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/about.js",
-                        lineNumber: 95,
+                        lineNumber: 105,
                         columnNumber: 7
                     }, this)
                 ]
@@ -1561,7 +1523,7 @@ function AboutPage() {
         ]
     }, void 0, true);
 }
-_s(AboutPage, "Y4KDu6OYzjM5FmLfSW57ue/UvDE=");
+_s(AboutPage, "deGougkmSVjPUBTFWZKhLcQQHKg=");
 _c = AboutPage;
 const __TURBOPACK__default__export__ = AboutPage;
 var _c;

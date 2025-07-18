@@ -1261,6 +1261,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NetworkVisuali
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$DataTerminal$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/DataTerminal.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MatrixRain$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/MatrixRain.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SystemStatus$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/SystemStatus.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
@@ -1269,16 +1272,50 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SystemStatus$2
 ;
 ;
 function HomePage() {
+    _s();
+    const [activeTooltip, setActiveTooltip] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [tooltipBounds, setTooltipBounds] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])({
+        top: 0,
+        left: 0,
+        width: 0,
+        height: 0
+    });
+    const services = [
+        {
+            title: "Organizational Psychology & Behavioral Analytics",
+            description: "Applied research in human behavior within decentralized organizations. Data-driven insights into team dynamics, decision-making patterns, and collective intelligence optimization using advanced statistical methods and network analysis."
+        },
+        {
+            title: "Strategic Product Development",
+            description: "End-to-end product strategy from concept to market launch. Specializing in Web3 products, DeFi protocols, and scientific research tools. Expertise in user research, technical specifications, go-to-market strategy, and iterative development methodologies."
+        },
+        {
+            title: "DAO Governance Architecture",
+            description: "Design and implementation of governance systems for decentralized autonomous organizations. Focus on voting mechanisms, proposal frameworks, dispute resolution, treasury management, and sustainable decision-making processes that scale with community growth."
+        },
+        {
+            title: "Web3 Protocol Design",
+            description: "Technical architecture and design of blockchain protocols with emphasis on scalability, security, and interoperability. Specializing in consensus mechanisms, smart contract systems, protocol economics, and integration with existing Web3 infrastructure."
+        },
+        {
+            title: "Tokenomics & Economic Modeling",
+            description: "Mathematical modeling and economic design of token systems including utility tokens, governance tokens, and complex incentive mechanisms. Expertise in distribution models, vesting schedules, inflation/deflation mechanics, and long-term economic sustainability analysis."
+        },
+        {
+            title: "Scientific Community Building",
+            description: "Building and nurturing scientific research communities in the DeSci space. Focus on researcher onboarding, collaboration frameworks, peer review systems, open science practices, and creating sustainable funding mechanisms for decentralized research initiatives."
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NetworkVisualization$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/index.js",
-                lineNumber: 11,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MatrixRain$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/index.js",
-                lineNumber: 12,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1289,22 +1326,22 @@ function HomePage() {
                             children: "Vagabond Arthouse - Strategic Consulting for Web3 & DeSci"
                         }, void 0, false, {
                             fileName: "[project]/pages/index.js",
-                            lineNumber: 15,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 14,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SystemStatus$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 17,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$nav$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 18,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -1315,7 +1352,7 @@ function HomePage() {
                                 children: "Vagabond Arthouse LLC"
                             }, void 0, false, {
                                 fileName: "[project]/pages/index.js",
-                                lineNumber: 20,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1323,13 +1360,13 @@ function HomePage() {
                                 children: "The consultancy of Renee Davis"
                             }, void 0, false, {
                                 fileName: "[project]/pages/index.js",
-                                lineNumber: 21,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 19,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1343,7 +1380,7 @@ function HomePage() {
                                         children: "About me"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.js",
-                                        lineNumber: 25,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1351,13 +1388,13 @@ function HomePage() {
                                         children: "The consultancy you've never heard of, orchestrating the launch of projects you undoubtedly recognize. At the intersection of rigorous science and transformative technology, we architect the future of decentralized organizations—one breakthrough at a time."
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.js",
-                                        lineNumber: 26,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/index.js",
-                                lineNumber: 24,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1368,98 +1405,70 @@ function HomePage() {
                                         children: "My Services"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.js",
-                                        lineNumber: 33,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "skills-list",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        children: services.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 className: "skill",
-                                                title: "Applied research in human behavior within decentralized organizations. Data-driven insights into team dynamics, decision-making patterns, and collective intelligence optimization using advanced statistical methods and network analysis.",
-                                                children: "Organizational Psychology & Behavioral Analytics"
-                                            }, void 0, false, {
+                                                onMouseEnter: ()=>setActiveTooltip(index),
+                                                onMouseLeave: ()=>setActiveTooltip(null),
+                                                children: [
+                                                    service.title,
+                                                    activeTooltip === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "tooltip show",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "tooltip-content",
+                                                            children: service.description
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/pages/index.js",
+                                                            lineNumber: 76,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/index.js",
+                                                        lineNumber: 75,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, index, true, {
                                                 fileName: "[project]/pages/index.js",
-                                                lineNumber: 35,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "End-to-end product strategy from concept to market launch. Specializing in Web3 products, DeFi protocols, and scientific research tools. Expertise in user research, technical specifications, go-to-market strategy, and iterative development methodologies.",
-                                                children: "Strategic Product Development"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/index.js",
-                                                lineNumber: 36,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Design and implementation of governance systems for decentralized autonomous organizations. Focus on voting mechanisms, proposal frameworks, dispute resolution, treasury management, and sustainable decision-making processes that scale with community growth.",
-                                                children: "DAO Governance Architecture"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/index.js",
-                                                lineNumber: 37,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Technical architecture and design of blockchain protocols with emphasis on scalability, security, and interoperability. Specializing in consensus mechanisms, smart contract systems, protocol economics, and integration with existing Web3 infrastructure.",
-                                                children: "Web3 Protocol Design"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/index.js",
-                                                lineNumber: 38,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Mathematical modeling and economic design of token systems including utility tokens, governance tokens, and complex incentive mechanisms. Expertise in distribution models, vesting schedules, inflation/deflation mechanics, and long-term economic sustainability analysis.",
-                                                children: "Tokenomics & Economic Modeling"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/index.js",
-                                                lineNumber: 39,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "skill",
-                                                title: "Building and nurturing scientific research communities in the DeSci space. Focus on researcher onboarding, collaboration frameworks, peer review systems, open science practices, and creating sustainable funding mechanisms for decentralized research initiatives.",
-                                                children: "Scientific Community Building"
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/index.js",
-                                                lineNumber: 40,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
                                         fileName: "[project]/pages/index.js",
-                                        lineNumber: 34,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/index.js",
-                                lineNumber: 32,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 23,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$DataTerminal$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/pages/index.js",
-                        lineNumber: 44,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/index.js",
-                lineNumber: 13,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
+_s(HomePage, "rmHk1C+RMN4CkQvatrUs47AkNFg=");
 _c = HomePage;
 const __TURBOPACK__default__export__ = HomePage;
 var _c;

@@ -7,7 +7,7 @@ import SystemStatus from '../components/SystemStatus';
 import { useState } from 'react';
 
 function AboutPage() {
-  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [activeTooltip, setActiveTooltip] = useState(null);
   
   const skills = [
     {
@@ -82,13 +82,23 @@ function AboutPage() {
         <section className="section">
           <h2 className="section-title">My skills</h2>
           <ul className="skills-list">
-            <li className="skill" title="Design and implementation of governance frameworks that enable effective collective decision-making in decentralized organizations. Expertise in voting mechanisms, proposal systems, and conflict resolution protocols.">DAO Governance</li>
-            <li className="skill" title="Architectural design of blockchain protocols with focus on scalability, security, and interoperability. Specializing in consensus mechanisms, smart contract architecture, and protocol economics.">Protocol Design</li>
-            <li className="skill" title="Economic modeling and design of token systems including utility tokens, governance tokens, and incentive mechanisms. Expertise in token distribution, vesting schedules, and economic sustainability models.">Tokenomics</li>
-            <li className="skill" title="Strategic marketing for Web3 projects including community building, narrative development, and growth hacking. Focus on technical audiences and scientific communities in the DeSci space.">Web3 Marketing</li>
-            <li className="skill" title="End-to-end product development from ideation to launch. Specializing in Web3 products, DeFi protocols, and scientific research tools. Expertise in user research, MVP development, and iterative design.">Product Management</li>
-            <li className="skill" title="Mathematical analysis of complex networks including social networks, blockchain networks, and organizational structures. Expertise in graph theory, centrality measures, and network dynamics modeling.">Network Analysis</li>
-            <li className="skill" title="Deep technical knowledge of blockchain technologies, smart contracts, DeFi protocols, and Web3 infrastructure. Hands-on experience with Ethereum, Layer 2 solutions, and emerging blockchain platforms.">Web3 Technology</li>
+            {skills.map((skill, index) => (
+              <li 
+                key={index}
+                className="skill"
+                onMouseEnter={() => setActiveTooltip(index)}
+                onMouseLeave={() => setActiveTooltip(null)}
+              >
+                {skill.name}
+                {activeTooltip === index && (
+                  <div className="tooltip show">
+                    <div className="tooltip-content">
+                      {skill.tooltip}
+                    </div>
+                  </div>
+                )}
+              </li>
+            ))}
           </ul>
         </section>
       </main>
